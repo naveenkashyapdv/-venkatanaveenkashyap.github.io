@@ -1,10 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
 <html>
 	<head>
 		<title>Venkata Naveen Kashyap - DevOps Engineer Portfolio</title>
@@ -13,6 +7,21 @@
 		<meta name="description" content="Portfolio of Venkata Naveen Kashyap Devulapally, a skilled DevOps Engineer with expertise in AWS, Terraform, Chef, Jenkins, and Docker." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<script>
+			function sendEmail() {
+				// Get form values
+				const name = document.getElementById('name').value;
+				const email = document.getElementById('email').value;
+				const message = document.getElementById('message').value;
+
+				// Construct mailto link
+				const mailtoLink = `mailto:venkatnavee07@gmail.com?subject=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+
+				// Open the mailto link
+				window.location.href = mailtoLink;
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -41,9 +50,7 @@
 				<article id="intro">
 					<h2 class="major">Intro</h2>
 					<span class="image main"><img src="images/devops1.jpg" alt="DevOps image" /></span>
-					<p>I'm always striving for excellence by being passionate towards technologies, by channelizing my energies and time into knowing and doing IT Operations' advancements to improve the end user's experience and enhance the value of the product by conducting my intelligence to focus on customer centricity and agility.</p>
-
-					<p>Aspiration and Attention, Competence and Commitment, Passion and Compassion, Wishing and Willing. Every duality that I mentioned plays certain chemistry in me all the time to access the intelligence and unleash the hidden capabilities in me.</p>
+					<p>I'm always striving for excellence by being passionate towards technologies...</p>
 					<p>By the way, check out my <a href="#work">awesome work</a>.</p>
 				</article>
 
@@ -52,50 +59,40 @@
 					<h2 class="major">Work</h2>
 					<span class="image main"><img src="images/Devops.jpg" alt="DevOps Work" /></span>
 					<ul>
-						<li>Well Experienced in DevOps Build/Release Process Methodologies, VMware, and AWS Cloud computing Technologies.</li>
-						<li>Actively involved in all stages of software development lifecycle (SDLC) Methodologies using Agile programming and Waterfall Process.</li>
-						<li>Worked in different organizations, participated in the architecture solution team, provided design ideas, followed industry best practices, and contributed to code review, source code control, software build processes, upgrades, testing/QA.</li>
-						<li>Administrative experience in Jira and proficient knowledge on other Atlassian products such as Bamboo, Bitbucket, Bitbucket Cloud CI, and Confluence.</li>
-						<li>Worked on Amazon Web Services on EC2, S3 bucket, RDS, EBS, ELB, Auto-Scaling, AMI, IAM through AWS Console and API Integration with Chef.</li>
-						<li>Extensive experience in Shell/Ruby/Python/Bash scripting.</li>
-						<li>Hands-on experience with Chef Enterprise and On-Premise servers. Successfully installed and configured Workstation and Bootstrapped Nodes.</li>
-						<li>Extensively used Ruby scripting on Chef Automation for creating cookbooks comprising all resources, data bags, templates, and attributes, and used Knife commands to manage Nodes.</li>
-						<li>Implemented Terraform modules for deployment of various applications across multiple cloud providers and managing infrastructure.</li>
-						<li>Integrated Terraform and Chef for building infrastructure and applications, thereby reducing the provisioning time by half.</li>
-						<li>Integrated Docker into various infrastructure tools, including AWS, Chef, Jenkins, and VMware vSphere Integrated Containers.</li>
-						<li>Assisted teams in implementing DevOps strategies using Jenkins for automated deployment of builds to different environments as the CI/CD engine.</li>
-						<li>Used Jenkins to provide configuration services on multiple platforms by adding necessary plugins, adding slaves for scalability, and providing consistent builds and deployments to production and non-production environments.</li>
-						<li>Acted as an SME and setup GitLab, Bitbucket accounts for new employees, and configured Jenkins using SCM repositories with webhooks and Role Based Accesses.</li>
-						<li>Proficient in deploying and supporting IBM applications like IBM HTTP Server, WebSphere, Solr, and WebSphere Commerce.</li>
-						<li>Experience with VMware ESXi, vCenter, and managing virtual environments.</li>
-						<li>Implemented monitoring and logging strategies using New Relic and Sumologic for production and non-production environments.</li>
-						<li>Proficient with RDBMS such as Oracle, MySQL, and SQL Server.</li>
-						<li>Managed environments both on-premise and AWS-based.</li>
-						<li>Single point contact for releases to production for all major projects.</li>
-						<li>Maintained detailed documentation of complex build and release processes for KT to colleagues.</li>
+						<li>Well Experienced in DevOps Build/Release Process Methodologies, including Continuous Integration (CI) and Continuous Deployment (CD).</li>
+						<li>Proficient in cloud platforms such as AWS, including services like EC2, S3, RDS, ELB, and Auto-Scaling.</li>
+						<li>Hands-on experience with Infrastructure as Code (IaC) tools like Terraform and CloudFormation for automating infrastructure provisioning.</li>
+						<li>Skilled in configuration management tools such as Chef and Ansible for automated configuration, deployment, and management of systems.</li>
+						<li>Experience with containerization and orchestration tools such as Docker and Kubernetes to deploy scalable and secure microservices.</li>
+						<li>Managed source code and version control using Git, GitHub, and Bitbucket. Expertise in managing branching and merging strategies.</li>
+						<li>Integrated CI/CD pipelines using Jenkins and Bamboo to automate testing, building, and deploying applications across multiple environments.</li>
+						<li>Developed and maintained shell scripts and Python automation scripts to streamline operational tasks and automate deployments.</li>
+						<li>Skilled in monitoring and logging solutions, including New Relic and Sumologic, for production and non-production environments.</li>
+						<li>Worked with teams on Agile and Scrum methodologies, contributing to sprints, backlogs, and release cycles to ensure timely delivery of software.</li>
+						<li>Provided technical guidance and leadership on DevOps best practices, mentoring junior team members in tools and methodologies.</li>
 					</ul>
 				</article>
 
 				<!-- Contact -->
 				<article id="contact">
 					<h2 class="major">Contact</h2>
-					<form method="post" action="#">
+					<form onsubmit="sendEmail(); return false;">
 						<div class="fields">
 							<div class="field half">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" aria-label="Enter your name" />
+								<input type="text" name="name" id="name" aria-label="Enter your name" required />
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="email" name="email" id="email" aria-label="Enter your email" />
+								<input type="email" name="email" id="email" aria-label="Enter your email" required />
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4" aria-label="Enter your message"></textarea>
+								<textarea name="message" id="message" rows="4" aria-label="Enter your message" required></textarea>
 							</div>
 						</div>
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><button type="submit" class="primary">Send Message</button></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
