@@ -1,87 +1,110 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>My Blog</title>
+		<title>All About DevOps - Deploying Containers in AKS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.container {
+				margin: 0 auto;
+				padding: 20px;
+				max-width: 1200px;
+				background-color: #333;
+				border-radius: 10px;
+			}
+			.article-content {
+				padding: 20px;
+				color: white;
+				font-size: 16pt;
+				line-height: 1.6;
+			}
+			.article-content h2 {
+				color: #4CAF50;
+				font-size: 24pt;
+			}
+			.article-content p {
+				font-size: 14pt;
+				margin-bottom: 20px;
+			}
+			.article-content img {
+				display: block;
+				margin: 20px auto;
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+			}
+			.pagination {
+				display: inline-block;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.pagination a {
+				color: white;
+				float: left;
+				padding: 8px 16px;
+				text-decoration: none;
+				transition: background-color .3s;
+				border: 1px solid #ddd;
+				margin: 0 4px;
+				background-color: #4CAF50;
+			}
+			.pagination a.active {
+				background-color: #fff;
+				color: black;
+				border: 1px solid #4CAF50;
+			}
+			.pagination a:hover:not(.active) {
+				background-color: #ddd;
+			}
+		</style>
 	</head>
-	<style>
-.center {
-  text-align: right;
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: white;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-  margin: 0 4px;
-}
-
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-p {
-  color: white;
-  text-align: left;
-  font-size: 12pt;
-  display: block;
-  padding: 10px 10px 10px 50px;
-}
-
-h2 {
- padding: 20px 100px 100px 50px;
-  color: white;
-  font-size: 15pt;
-  display: block;
-  background-color: inherit;
-  font-style: italic;
-  cursor: pointer;
-  text-align: left;
-}
-h3 {
-  color: white;
-  padding: 20px 300px 10px 500px;
-  text-align: left;
-}
-h {
-  color: white;
-  padding: 20px 100px 100px 1150px;
-}
-</style>
 	<body class="is-preload">
-	
 		<!-- Header -->
-		<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
-		<center><h1>ALL ABOUT DEVOPS</h1><center><br/><br/><br/>
-		
-		<!-- Blog Links Section -->
-		<article id="1">
-			<h2>DevOps Blog Posts</h2>
-			<ul>
-				<li><a href="aks.html">Azure Kubernetes Service (AKS)</a></li>
-				<li><a href="containers-in-aks.html">Deploying Containers in AKS</a></li>
-				<li><a href="terraform-iac.html">Infrastructure as Code (IaC) with Terraform</a></li>
-				<li><a href="kubernetes-devops.html">Benefits of Kubernetes in DevOps</a></li>
-			</ul>
-		</article>
+		<div class="center">
+			<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a></h><br/>
+			<center><h1>ALL ABOUT DEVOPS</h1><center>
+		</div>
+
+		<!-- Content Container -->
+		<div class="container">
+			<div class="article-content">
+				<h2>Deploying Containers in AKS</h2>
+				<p>One of the most powerful aspects of Azure Kubernetes Service (AKS) is its ability to easily deploy and manage containers. Containers package applications along with their dependencies, making them highly portable across different environments.</p>
+				<p>In AKS, containers are orchestrated using Kubernetes, ensuring that they are deployed, scaled, and maintained effectively. Developers often use container images stored in an Azure Container Registry (ACR) and deploy them to AKS clusters, where they can easily scale based on demand.</p>
+				
+				<!-- Example Image -->
+				<img src="https://kubernetes.io/images/kubernetes-horizontal-color.png" alt="Kubernetes Logo">
+
+				<h2>Step-by-Step: Deploying a Container</h2>
+				<p>Follow these steps to deploy a container to AKS:</p>
+				<ol>
+					<li>**Create a Container Image**: First, create your container image using Docker and push it to Azure Container Registry (ACR).</li>
+					<li>**Create an AKS Cluster**: Using the Azure Portal or CLI, set up a managed Kubernetes cluster on AKS.</li>
+					<li>**Deploy the Container**: Use a Kubernetes manifest file (YAML) to define the deployment configuration, then use the `kubectl apply` command to deploy it.</li>
+					<li>**Monitor and Scale**: Leverage Azure Monitor and Kubernetes Horizontal Pod Autoscaler to monitor performance and scale containers based on traffic.</li>
+				</ol>
+
+				<img src="https://miro.medium.com/max/1400/1*xXB_hVkptN61PpBfDtBkSg.png" alt="AKS Deployment Process">
+
+				<h2>Benefits of Containers in AKS</h2>
+				<p>Containers in AKS provide several key benefits:</p>
+				<ul>
+					<li>**Scalability**: Easily scale applications up or down based on traffic with Kubernetes’ built-in autoscaling capabilities.</li>
+					<li>**Portability**: Containers can be moved between environments (e.g., development to production) without changes.</li>
+					<li>**Resilience**: Kubernetes self-healing ensures that failed containers are automatically restarted or replaced.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="pagination">
+			<a href="blog2.html">&laquo; Prev</a>
+			<a class="active" href="blog3.html">3</a>
+			<a href="blog4.html">Next &raquo;</a>
+		</div>
 
 		<!-- Footer -->
 		<footer id="footer" class="wrapper alt">
@@ -93,13 +116,12 @@ h {
 		</footer>
 
 		<!-- Scripts -->
-		<script src="assets1/js/jquery.min.js"></script>
-		<script src="assets1/js/jquery.scrollex.min.js"></script>
-		<script src="assets1/js/jquery.scrolly.min.js"></script>
-		<script src="assets1/js/browser.min.js"></script>
-		<script src="assets1/js/breakpoints.min.js"></script>
-		<script src="assets1/js/util.js"></script>
-		<script src="assets1/js/main.js"></script>
-		
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
