@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>All About DevOps - Infrastructure as Code (IaC) with Terraform</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.container {
+				margin: 0 auto;
+				padding: 20px;
+				max-width: 1200px;
+				background-color: #333;
+				border-radius: 10px;
+			}
+			.article-content {
+				padding: 20px;
+				color: white;
+				font-size: 16pt;
+				line-height: 1.6;
+			}
+			.article-content h2 {
+				color: #4CAF50;
+				font-size: 24pt;
+			}
+			.article-content p {
+				font-size: 14pt;
+				margin-bottom: 20px;
+			}
+			.article-content img {
+				display: block;
+				margin: 20px auto;
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+			}
+			.pagination {
+				display: inline-block;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.pagination a {
+				color: white;
+				float: left;
+				padding: 8px 16px;
+				text-decoration: none;
+				transition: background-color .3s;
+				border: 1px solid #ddd;
+				margin: 0 4px;
+				background-color: #4CAF50;
+			}
+			.pagination a.active {
+				background-color: #fff;
+				color: black;
+				border: 1px solid #4CAF50;
+			}
+			.pagination a:hover:not(.active) {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<div class="center">
+			<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a></h><br/>
+			<center><h1>ALL ABOUT DEVOPS</h1><center>
+		</div>
+
+		<!-- Content Container -->
+		<div class="container">
+			<div class="article-content">
+				<h2>Infrastructure as Code (IaC) with Terraform</h2>
+				<p>Terraform is a powerful open-source tool that allows you to define and provision your cloud infrastructure using code. This approach, known as Infrastructure as Code (IaC), allows developers and operations teams to automate the provisioning, scaling, and management of cloud resources like AKS clusters, virtual machines, storage accounts, and more.</p>
+
+				<img src="https://learn.hashicorp.com/img/terraform/terraform-enterprise/cloud/terraform-enterprise.png" alt="Terraform Infrastructure as Code">
+				
+				<h2>Why Use Terraform?</h2>
+				<p>Terraform helps DevOps teams in several ways:</p>
+				<ul>
+					<li>**Consistency**: Infrastructure is defined as code, so environments remain consistent across development, testing, and production.</li>
+					<li>**Version Control**: Use Git to version and track changes to infrastructure code, making it easy to collaborate and roll back changes.</li>
+					<li>**Automation**: With the help of Terraform, you can automate the entire infrastructure lifecycle, from creation to tear-down.</li>
+					<li>**Multi-Cloud Support**: Terraform is provider-agnostic, meaning you can use it with multiple cloud providers like AWS, Azure, Google Cloud, and more.</li>
+				</ul>
+
+				<h2>How Terraform Works with AKS</h2>
+				<p>With Terraform, you can automate the deployment and management of Azure Kubernetes Service (AKS) clusters. Here's how it works:</p>
+				<ol>
+					<li>**Define Resources**: Create a Terraform file that defines your desired infrastructure (e.g., AKS cluster, virtual network, storage).</li>
+					<li>**Initialize Terraform**: Run `terraform init` to initialize your working directory.</li>
+					<li>**Apply Configuration**: Run `terraform apply` to provision the resources in your Terraform file.</li>
+					<li>**Track Changes**: Any updates to the infrastructure can be applied incrementally using `terraform apply` again.</li>
+				</ol>
+
+				<img src="https://miro.medium.com/max/1400/1*KlfqOeeheXrSgOAO1ISn5g.png" alt="Terraform AKS Deployment">
+			</div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="pagination">
+			<a href="blog3.html">&laquo; Prev</a>
+			<a class="active" href="blog4.html">4</a>
+			<a href="blog5.html">Next &raquo;</a>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<h4 class="copyright">&copy; All Rights Reserved</h4>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
