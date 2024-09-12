@@ -59,13 +59,35 @@
 			footer {
 				margin-top: 40px;
 			}
+			/* Style for the header buttons */
+			.header-buttons {
+				display: flex;
+				justify-content: flex-end;
+				padding: 20px;
+				margin-bottom: -50px;
+			}
+
+			.header-buttons a {
+				background-color: #4CAF50;
+				color: white;
+				padding: 8px 12px;
+				border-radius: 5px;
+				text-decoration: none;
+				margin-left: 10px;
+				font-size: 14px;
+				transition: background-color 0.3s ease;
+			}
+
+			.header-buttons a:hover {
+				background-color: #45a049;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
-		<div class="center">
-			<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a></h><br/>
-			<center><h1>ALL ABOUT DEVOPS</h1><center>
+		<div class="header-buttons">
+			<a href="index.html">Home</a>
+			<a href="videos.html">Videos</a>
 		</div>
 
 		<!-- Content Container -->

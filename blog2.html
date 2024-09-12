@@ -55,11 +55,12 @@
 				color: white;
 				background-color: #4CAF50;
 				border: none;
-				padding: 10px 20px;
+				padding: 10px 15px;
 				text-decoration: none;
 				margin: 0 5px;
 				border-radius: 5px;
 				transition: background-color 0.3s ease;
+				font-size: 14px;
 			}
 			.pagination a:hover {
 				background-color: #45a049;
@@ -71,12 +72,39 @@
 				color: white;
 				margin-top: 40px;
 			}
+			
+			/* Style for the header buttons */
+			.header-buttons {
+				display: flex;
+				justify-content: flex-end;
+				padding: 20px;
+				margin-bottom: -50px;
+			}
+
+			.header-buttons a {
+				background-color: #4CAF50;
+				color: white;
+				padding: 8px 12px;
+				border-radius: 5px;
+				text-decoration: none;
+				margin-left: 10px;
+				font-size: 14px;
+				transition: background-color 0.3s ease;
+			}
+
+			.header-buttons a:hover {
+				background-color: #45a049;
+			}
 		</style>
 	</head>
 	<body>
 
 		<!-- Header -->
-		<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
+		<div class="header-buttons">
+			<a href="index.html">Home</a>
+			<a href="videos.html">Videos</a>
+		</div>
+
 		<center><h1>ALL ABOUT CLOUD - AWS & AZURE</h1><center><br/><br/><br/>
 
 		<!-- Content -->
@@ -96,7 +124,7 @@
 					
 					<h2>Comparing AWS and Azure</h2>
 					<p>Both AWS and Azure offer powerful cloud computing services, but their pricing, tools, and service offerings may appeal to different needs. AWS focuses on infrastructure services, while Azure focuses on seamless integration with Microsoft tools. Choosing the right platform depends on your project needs and existing technology stack.</p>
-					<p><a href="" target="_blank">Compare AWS and Azure on Medium</a></p>
+					<p><a href="https://www.infopulse.com/blog/aws-vs-azure-cloud-platform" target="_blank">Compare AWS and Azure on Medium</a></p>
 				</article>
 			</div>
 		</div>
