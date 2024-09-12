@@ -1,36 +1,43 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>All About DevOps - Azure Kubernetes Service (AKS)</title>
+		<title>DevOps Blog - Azure Kubernetes Service (AKS)</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Styling for images and layout */
-			.center {
+			body {
+				background-color: #f4f4f4;
+				color: #333;
+				font-family: 'Arial', sans-serif;
+			}
+			h1 {
 				text-align: center;
+				color: #2d2d2d;
+				font-size: 3em;
+				margin-top: 20px;
 			}
 			.container {
 				margin: 0 auto;
 				padding: 20px;
 				max-width: 1200px;
-				background-color: #333;
-				border-radius: 10px;
 			}
 			.article-content {
+				background-color: #fff;
 				padding: 20px;
-				color: white;
-				font-size: 16pt;
-				line-height: 1.6;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 			}
 			.article-content h2 {
 				color: #4CAF50;
 				font-size: 24pt;
+				margin-bottom: 20px;
 			}
 			.article-content p {
 				font-size: 14pt;
 				margin-bottom: 20px;
+				line-height: 1.8;
 			}
 			.article-content img {
 				display: block;
@@ -41,93 +48,59 @@
 				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 			}
 			.pagination {
-				display: inline-block;
+				text-align: center;
+				margin-top: 40px;
 			}
 			.pagination a {
 				color: white;
-				float: left;
-				padding: 8px 16px;
-				text-decoration: none;
-				transition: background-color .3s;
-				border: 1px solid #ddd;
-				margin: 0 4px;
 				background-color: #4CAF50;
+				border: none;
+				padding: 10px 20px;
+				text-decoration: none;
+				margin: 0 5px;
+				border-radius: 5px;
+				transition: background-color 0.3s ease;
 			}
-			.pagination a.active {
-				background-color: #fff;
-				color: black;
-				border: 1px solid #4CAF50;
+			.pagination a:hover {
+				background-color: #45a049;
 			}
-			.pagination a:hover:not(.active) {
-				background-color: #ddd;
+			footer {
+				text-align: center;
+				padding: 20px;
+				background-color: #2d2d2d;
+				color: white;
+				margin-top: 40px;
 			}
 		</style>
 	</head>
-	<body class="is-preload">
-		<!-- Header -->
-		<div class="center">
-			<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a></h><br/>
-			<center><h1>ALL ABOUT DEVOPS</h1><center>
-		</div>
+	<body>
 
-		<!-- Content Container -->
+		<!-- Header -->
+		<h1>DevOps Blog - Azure Kubernetes Service (AKS)</h1>
+
+		<!-- Content -->
 		<div class="container">
 			<div class="article-content">
 				<h2>What is Azure Kubernetes Service (AKS)?</h2>
-				<p>Azure Kubernetes Service (AKS) is a managed Kubernetes container orchestration service offered by Microsoft Azure. It significantly reduces the complexity of deploying and managing Kubernetes clusters by offloading many administrative tasks such as provisioning, scaling, and monitoring to the Azure platform.</p>
-				
-				<!-- Example Image -->
-				<img src="https://miro.medium.com/max/1400/1*FkGR80Kx4FTPb5E8FvBGaw.png" alt="Azure Kubernetes Service Diagram" />
-				
-				<p>AKS provides flexibility to run containerized applications in the cloud and on-premise with services like Azure DevOps integration. Kubernetes clusters in AKS allow you to quickly build, deploy, and scale applications without managing the underlying infrastructure. It also integrates with Azure services like Active Directory and Log Analytics.</p>
+				<p>Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by offloading much of the complexity and operational overhead to the Azure platform.</p>
+				<img src="https://via.placeholder.com/1200x600?text=Azure+Kubernetes+Service" alt="Azure Kubernetes Service">
 
 				<h2>Key Features of AKS</h2>
-				<p>AKS brings several powerful features that make it a go-to service for DevOps teams working with Kubernetes:</p>
-				<ul>
-					<li>**Automated Scaling:** Automatically scale your workloads up or down based on demand.</li>
-					<li>**Self-Healing:** Detect and restart containers that fail automatically.</li>
-					<li>**Integrated Monitoring:** Monitor performance with Azure Monitor, Prometheus, and Grafana integration.</li>
-					<li>**CI/CD Pipelines:** Seamlessly integrate with Azure DevOps, GitHub Actions, and Jenkins to automate deployment pipelines.</li>
-					<li>**Security:** Provides built-in network security, role-based access control (RBAC), and integrates with Azure Active Directory for authentication and authorization.</li>
-				</ul>
-
-				<h2>Why Use AKS?</h2>
-				<p>AKS is ideal for enterprises looking to adopt DevOps practices. By using Kubernetes in Azure, teams can:</p>
-				<ul>
-					<li>Develop and deploy containerized apps rapidly.</li>
-					<li>Manage infrastructure as code using Terraform or ARM templates.</li>
-					<li>Implement advanced deployment strategies like canary releases and blue-green deployments.</li>
-				</ul>
-
-				<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Uk-vSngP--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/wzks6zz4l0owwxvqiuvf.png" alt="AKS Deployment" />
+				<p>Some of the key features of AKS include automated scaling, integrated monitoring, and seamless integration with Azure DevOps for CI/CD pipelines.</p>
+				<img src="https://via.placeholder.com/1200x600?text=AKS+Key+Features" alt="AKS Key Features">
 			</div>
 		</div>
 
 		<!-- Pagination -->
-		<div class="center">
-			<div class="pagination">
-				<a href="blog.html">&laquo; Prev</a>
-				<a class="active" href="blog2.html">2</a>
-				<a href="blog3.html">Next &raquo;</a>
-			</div>
+		<div class="pagination">
+			<a href="blog1.html">&laquo; Prev</a>
+			<a href="blog3.html">Next &raquo;</a>
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer" class="wrapper alt">
-			<div class="inner">
-				<ul class="menu">
-					<h4 class="copyright">&copy; All Rights Reserved</h4>
-				</ul>
-			</div>
+		<footer>
+			&copy; All Rights Reserved
 		</footer>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
 	</body>
 </html>

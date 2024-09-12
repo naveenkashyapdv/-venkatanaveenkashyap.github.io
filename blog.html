@@ -1,115 +1,106 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>My Blog</title>
-		<meta charset="utf-8" />
+		<title>DevOps Blog - Git Cheat Sheet & Exercises</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				background-color: #f4f4f4;
+				color: #333;
+				font-family: 'Arial', sans-serif;
+			}
+			h1 {
+				text-align: center;
+				color: #2d2d2d;
+				font-size: 3em;
+				margin-top: 20px;
+			}
+			.container {
+				margin: 0 auto;
+				padding: 20px;
+				max-width: 1200px;
+			}
+			.article-content {
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			}
+			.article-content h2 {
+				color: #4CAF50;
+				font-size: 24pt;
+				margin-bottom: 20px;
+			}
+			.article-content p {
+				font-size: 14pt;
+				margin-bottom: 20px;
+				line-height: 1.8;
+			}
+			.article-content img {
+				display: block;
+				margin: 20px auto;
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+			}
+			.pagination {
+				text-align: center;
+				margin-top: 40px;
+			}
+			.pagination a {
+				color: white;
+				background-color: #4CAF50;
+				border: none;
+				padding: 10px 20px;
+				text-decoration: none;
+				margin: 0 5px;
+				border-radius: 5px;
+				transition: background-color 0.3s ease;
+			}
+			.pagination a:hover {
+				background-color: #45a049;
+			}
+			footer {
+				text-align: center;
+				padding: 20px;
+				background-color: #2d2d2d;
+				color: white;
+				margin-top: 40px;
+			}
+		</style>
 	</head>
-	<style>
-
-.center {
-  text-align: right;
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: white;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-  margin: 0 4px;
-}
-
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-p {
-  color: white;
-  text-align: left;
-  font-size: 12pt;
-  display: block;
-  padding: 10px 10px 10px 50px;
-}
-
-h2 {
- padding: 20px 100px 100px 50px;
-  color: white;
-  font-size: 15pt;
-  display: block;
-  background-color: inherit;
-  font-style: italic;
-  cursor: pointer;
-  text-align: left;
-}
-h3 {
-  color: white;
-  padding: 20px 300px 10px 500px;
-  text-align: left;
-}
-h {
-  color: white;
-  padding: 20px 100px 100px 1150px;
-}
-</style>
-	<body class="is-preload">
-	
+	<body>
 
 		<!-- Header -->
-					<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
-					<center><h1>ALL ABOUT DEVOPS</h1><center><br/><br/><br/>
-						 <div class="content">
-                          <div style="margin-left:850px;margin-top:10px;"><div class="pagination"><a href="index.html">&laquo Prev</a><a class="active" href="blog.html">1</a><a href="blog2.html">2</a><a href="blog2.html">Next &raquo</a></div></div>
-                          </div>
-                          </div>
-							<!--Page1-->
-							<article id="1">
-								<h3 class="1"></h3>
-								<p class="1"></h3> <a href="blog/git-cheat-sheet/git-cheat-sheet.html">Git-Cheat-Sheet:<br/><br />Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.</p>
-								<p class="1"></h3> <a href="blog/git-exercises/git-exercises.html">Git Exercises:<br/><br/>These exercises aim to give you some practice with using the Git version control system. Each exercise comes in two parts: a main task that most, if not all, course attendees should be able to complete in the allocated time, as well as a stretch task for those who complete the main task quickly..</p> 
-							</article>
-							</div>
-							<!--Page1-->
-							
-							<!--Page2-->
-			<!-- Footer -->
-				<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<h4 class="copyright">&copy; All Rights Reserved</h4>
-					</ul>
-				</div>
-			</footer>
+		<h1>DevOps Blog - Git Cheat Sheet & Exercises</h1>
 
-		<!-- Scripts -->
-			<script src="assets1/js/jquery.min.js"></script>
-			<script src="assets1/js/jquery.scrollex.min.js"></script>
-			<script src="assets1/js/jquery.scrolly.min.js"></script>
-			<script src="assets1/js/browser.min.js"></script>
-			<script src="assets1/js/breakpoints.min.js"></script>
-			<script src="assets1/js/util.js"></script>
-			<script src="assets1/js/main.js"></script>
-		
-		</body>
+		<!-- Content -->
+		<div class="container">
+			<div class="article-content">
+				<h2>Git Cheat Sheet</h2>
+				<p>Git is an open-source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.</p>
+				<img src="https://via.placeholder.com/1200x600?text=Git+Cheat+Sheet" alt="Git Cheat Sheet">
+
+				<h2>Git Exercises</h2>
+				<p>These exercises aim to give you some practice with using Git version control. Each exercise comes in two parts: a main task for quick completion and a stretch task for more advanced users.</p>
+				<img src="https://via.placeholder.com/1200x600?text=Git+Exercises" alt="Git Exercises">
+			</div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="pagination">
+			<a href="index.html">Home</a>
+			<a href="blog2.html">Next &raquo;</a>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			&copy; All Rights Reserved
+		</footer>
+
+	</body>
 </html>
