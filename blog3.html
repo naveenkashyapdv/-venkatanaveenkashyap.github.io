@@ -39,14 +39,6 @@
 				margin-bottom: 20px;
 				line-height: 1.8;
 			}
-			.article-content img {
-				display: block;
-				margin: 20px auto;
-				max-width: 100%;
-				height: auto;
-				border-radius: 10px;
-				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-			}
 			.pagination {
 				text-align: center;
 				margin-top: 40px;
@@ -76,39 +68,46 @@
 	<body>
 
 		<!-- Header -->
-		<h1>DevOps Blog - Deploying Containers in AKS</h1>
+		<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
+		<center><h1>ALL ABOUT DEVOPS</h1><center><br/><br/><br/>
 
 		<!-- Content -->
 		<div class="container">
-			<div class="article-content">
-				<h2>Deploying Containers in AKS</h2>
-				<p>Azure Kubernetes Service (AKS) allows developers to deploy containerized applications with ease. In this guide, we’ll walk through the deployment process:</p>
-				<ol>
-					<li>Build your Docker container image.</li>
-					<li>Push the container image to Azure Container Registry (ACR).</li>
-					<li>Deploy the container to AKS using Kubernetes manifests.</li>
-					<li>Monitor and scale your container with AKS tools.</li>
-				</ol>
-				<!-- Placeholder Image for AKS Deployment -->
-				<img src="https://via.placeholder.com/1200x600?text=Deploying+Containers+in+AKS" alt="Deploying Containers in AKS">
-
-				<h2>Scaling Applications with AKS</h2>
-				<p>Kubernetes in AKS provides automatic scaling for containers, ensuring that your application can handle increased traffic. AKS also integrates with Azure Monitor for complete application observability.</p>
-				<!-- Placeholder Image for AKS Scaling -->
-				<img src="https://via.placeholder.com/1200x600?text=Scaling+Applications+in+AKS" alt="Scaling Applications in AKS">
+			<div class="content">
+				<!-- Page 3 Content -->
+				<article id="3">
+					<h3 class="3"></h3>
+					<p class="3"><a href="https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application" target="_blank">Deploying Containers in AKS:<br/><br />Learn how to deploy a containerized application using Azure Kubernetes Service (AKS). This tutorial covers every step to ensure your containers are deployed and scaled effectively.</a></p>
+					
+					<p class="3"><a href="https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-quick-task" target="_blank">Azure Container Registry (ACR):<br/><br/>Push and store your Docker images using Azure Container Registry, and integrate it with AKS to streamline your container workflows.</a></p> 
+				</article>
 			</div>
 		</div>
 
 		<!-- Pagination -->
 		<div class="pagination">
 			<a href="blog2.html">&laquo; Prev</a>
+			<a class="active" href="blog3.html">3</a>
 			<a href="blog4.html">Next &raquo;</a>
 		</div>
 
 		<!-- Footer -->
-		<footer>
-			&copy; All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<h4 class="copyright">&copy; All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a></h4>
+				</ul>
+			</div>
 		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

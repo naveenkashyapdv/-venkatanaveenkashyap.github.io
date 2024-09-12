@@ -39,14 +39,6 @@
 				margin-bottom: 20px;
 				line-height: 1.8;
 			}
-			.article-content img {
-				display: block;
-				margin: 20px auto;
-				max-width: 100%;
-				height: auto;
-				border-radius: 10px;
-				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-			}
 			.pagination {
 				text-align: center;
 				margin-top: 40px;
@@ -76,40 +68,46 @@
 	<body>
 
 		<!-- Header -->
-		<h1>DevOps Blog - Infrastructure as Code with Terraform</h1>
+		<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
+		<center><h1>ALL ABOUT DEVOPS</h1><center><br/><br/><br/>
 
 		<!-- Content -->
 		<div class="container">
-			<div class="article-content">
-				<h2>Why Use Terraform for Infrastructure as Code (IaC)?</h2>
-				<p>Terraform allows you to define infrastructure as code, which provides many benefits such as consistency, automation, and version control.</p>
-				<p>By using Terraform, you can easily create, modify, and destroy infrastructure across multiple cloud providers like AWS, Azure, and GCP.</p>
-				<!-- Placeholder Image for Terraform IaC -->
-				<img src="https://via.placeholder.com/1200x600?text=Terraform+Infrastructure+as+Code" alt="Terraform Infrastructure as Code">
-
-				<h2>Setting Up Infrastructure with Terraform</h2>
-				<p>Follow these steps to provision infrastructure using Terraform:</p>
-				<ol>
-					<li>Create a Terraform configuration file to define your resources (e.g., VMs, storage).</li>
-					<li>Initialize Terraform with `terraform init`.</li>
-					<li>Use `terraform plan` to preview the infrastructure changes.</li>
-					<li>Apply the changes with `terraform apply`.</li>
-				</ol>
-				<!-- Placeholder Image for Terraform Setup -->
-				<img src="https://via.placeholder.com/1200x600?text=Terraform+Setup+Guide" alt="Terraform Setup Guide">
+			<div class="content">
+				<!-- Page 4 Content -->
+				<article id="4">
+					<h3 class="4"></h3>
+					<p class="4"><a href="https://developer.hashicorp.com/terraform" target="_blank">Infrastructure as Code with Terraform:<br/><br />Terraform is an open-source tool for building, changing, and versioning infrastructure. This official Terraform site provides extensive documentation and guides to get started with Infrastructure as Code.</a></p>
+					
+					<p class="4"><a href="https://learn.hashicorp.com/collections/terraform/azure-get-started" target="_blank">Terraform on Azure:<br/><br/>This tutorial collection from HashiCorp walks you through provisioning Azure resources using Terraform. Automate the deployment of your infrastructure using Terraform's Infrastructure as Code (IaC) capabilities.</a></p> 
+				</article>
 			</div>
 		</div>
 
 		<!-- Pagination -->
 		<div class="pagination">
 			<a href="blog3.html">&laquo; Prev</a>
+			<a class="active" href="blog4.html">4</a>
 			<a href="blog5.html">Next &raquo;</a>
 		</div>
 
 		<!-- Footer -->
-		<footer>
-			&copy; All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<h4 class="copyright">&copy; All Rights Reserved | <a href="contact.html" style="color:white;">Contact Us</a></h4>
+				</ul>
+			</div>
 		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
