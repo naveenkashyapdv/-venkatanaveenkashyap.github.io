@@ -71,13 +71,40 @@
 				color: white;
 				margin-top: 40px;
 			}
+			
+			/* Style for the header buttons */
+			.header-buttons {
+				display: flex;
+				justify-content: flex-end;
+				padding: 20px;
+				margin-bottom: -50px;
+			}
+
+			.header-buttons a {
+				background-color: #4CAF50;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 5px;
+				text-decoration: none;
+				margin-left: 10px;
+				font-size: 16px;
+				transition: background-color 0.3s ease;
+			}
+
+			.header-buttons a:hover {
+				background-color: #45a049;
+			}
 		</style>
 	</head>
 	<body>
 
 		<!-- Header -->
-		<h><a href="index.html">Home</a> &nbsp;&nbsp; <a href="videos.html">Videos</a><br/>
-		<center><h1>ALL ABOUT DEVOPS</h1><center><br/><br/><br/>
+		<div class="header-buttons">
+			<a href="index.html">Home</a>
+			<a href="videos.html">Videos</a>
+		</div>
+
+		<center><h1>ALL ABOUT DEVOPS</h1></center><br/><br/><br/>
 
 		<!-- Content -->
 		<img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000">	
@@ -87,7 +114,7 @@
 				<!-- Page 1 Content -->
 				<article id="1">
 					<h3 class="1"></h3>
-					<p class="1"><a href="blog/git-cheat-sheet/git-cheat-sheet.html">Git Cheat Sheet:<br/><br />Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.</a></p>
+					<p class="1"><a href="blog/git-cheat-sheet/git-cheat-sheet.html">Git Cheat Sheet:<br/><br />Git is the open-source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.</a></p>
 					
 					<p class="1"><a href="blog/git-exercises/git-exercises.html">Git Exercises:<br/><br/>These exercises aim to give you some practice with using the Git version control system. Each exercise comes in two parts: a main task that most, if not all, course attendees should be able to complete in the allocated time, as well as a stretch task for those who complete the main task quickly.</a></p> 
 				</article>
