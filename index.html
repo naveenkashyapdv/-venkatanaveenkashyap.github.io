@@ -4,9 +4,28 @@
 		<title>Venkata Naveen Kashyap - DevOps Engineer Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Portfolio of Venkata Naveen Kashyap Devulapally, a skilled DevOps Engineer with expertise in AWS, Terraform, Chef, Jenkins, and Docker." />
+		<meta name="description" content="Portfolio of Venkata Naveen Kashyap, a DevOps Engineer skilled in AWS, Terraform, CI/CD, Docker, and Kubernetes. Explore my work in infrastructure automation, configuration management, and cloud solutions." />
+
+		<!-- Favicon Icon -->
+	<link rel="icon" type="image/png" href="images/personal-icon.png" sizes="32x32" />
+	
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Venkata Naveen Kashyap",
+			"jobTitle": "DevOps Engineer",
+			"url": "https://yourwebsite.com",
+			"sameAs": [
+				"https://github.com/naveenkashyapdv",
+				"https://www.linkedin.com/in/venkat-naveenkashyap-devulapally-3aaa1182/"
+			]
+		}
+		</script>
 		
 		<script>
 			function sendEmail() {
@@ -49,7 +68,7 @@
 				<!-- Intro -->
 				<article id="intro">
 					<h2 class="major">Intro</h2>
-					<span class="image main"><img src="images/devops1.jpg" alt="DevOps image" /></span>
+					<span class="image main"><img src="images/devops1.jpg" alt="DevOps engineer at work" loading="lazy"/></span>
 					<p>I'm always striving for excellence by being passionate towards technologies...</p>
 					<p>By the way, check out my <a href="#work">awesome work</a>.</p>
 				</article>
@@ -57,13 +76,13 @@
 				<!-- Work -->
 				<article id="work">
 					<h2 class="major">Work</h2>
-					<span class="image main"><img src="images/Devops.jpg" alt="DevOps Work" /></span>
+					<span class="image main"><img src="images/Devops.jpg" alt="Representation of DevOps processes" loading="lazy" /></span>
 					<ul>
 						<li>Well Experienced in DevOps Build/Release Process Methodologies, including Continuous Integration (CI) and Continuous Deployment (CD).</li>
-						<li>Proficient in cloud platforms such as AWS, including services like EC2, S3, RDS, ELB, and Auto-Scaling.</li>
-						<li>Hands-on experience with Infrastructure as Code (IaC) tools like Terraform and CloudFormation for automating infrastructure provisioning.</li>
-						<li>Skilled in configuration management tools such as Chef and Ansible for automated configuration, deployment, and management of systems.</li>
-						<li>Experience with containerization and orchestration tools such as Docker and Kubernetes to deploy scalable and secure microservices.</li>
+						<li>Proficient in cloud platforms such as AWS, including services like <a href="https://aws.amazon.com/ec2/" target="_blank">EC2</a>, <a href="https://aws.amazon.com/s3/" target="_blank">S3</a>, RDS, ELB, and Auto-Scaling.</li>
+						<li>Hands-on experience with Infrastructure as Code (IaC) tools like <a href="https://www.terraform.io/" target="_blank">Terraform</a> and CloudFormation for automating infrastructure provisioning.</li>
+						<li>Skilled in configuration management tools such as <a href="https://www.chef.io/" target="_blank">Chef</a> and <a href="https://www.ansible.com/" target="_blank">Ansible</a> for automated configuration, deployment, and management of systems.</li>
+						<li>Experience with containerization and orchestration tools such as Docker and <a href="https://kubernetes.io/" target="_blank">Kubernetes</a> to deploy scalable and secure microservices.</li>
 						<li>Managed source code and version control using Git, GitHub, and Bitbucket. Expertise in managing branching and merging strategies.</li>
 						<li>Integrated CI/CD pipelines using Jenkins and Bamboo to automate testing, building, and deploying applications across multiple environments.</li>
 						<li>Developed and maintained shell scripts and Python automation scripts to streamline operational tasks and automate deployments.</li>
@@ -80,28 +99,28 @@
 						<div class="fields">
 							<div class="field half">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" aria-label="Enter your name" required />
+								<input type="text" name="name" id="name" aria-label="Enter your name" placeholder="Your Name" required />
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="email" name="email" id="email" aria-label="Enter your email" required />
+								<input type="email" name="email" id="email" aria-label="Enter your email" placeholder="Your Email" required />
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4" aria-label="Enter your message" required></textarea>
+								<textarea name="message" id="message" rows="4" aria-label="Enter your message" placeholder="Your Message" required></textarea>
 							</div>
 						</div>
 						<ul class="actions">
-							<li><button type="submit" class="primary">Send Message</button></li>
+							<li><button type="submit" class="primary" onclick="sendEmail()">Send Message</button></li>
 							<li><input type="reset" value="Reset" /></li>
 						</ul>
 					</form>
 					<ul class="actions">
-						<li><a href="https://www.facebook.com/venkatanaveenkashyap" class="icon"><img src="images/facebook.ico" alt="Facebook Icon" /></a></li>
-						<li><a href="https://github.com/naveenkashyapdv" class="icon"><img src="images/github.ico" alt="Github Icon" /></a></li>
-						<li><a href="https://www.linkedin.com/in/venkat-naveenkashyap-devulapally-3aaa1182/" class="icon"><img src="images/linkedin.ico" alt="Linkedin Icon" /></a></li>
-						<li><a href="https://docs.google.com/document/d/14G2XIB9Q9lY-sJlkoKuUI_5tCzPuZ-Wk/edit" class="icon"><img src="images/resume.ico" alt="Resume Icon" /></a></li>
-						<li><a href="https://hub.docker.com/search/?q=naveenkashyapdv&type=image/" class="icon"><img src="images/docker.ico" alt="Docker Icon" /></a></li>
+						<li><a href="https://www.facebook.com/venkatanaveenkashyap" class="icon" aria-label="Facebook Profile"><img src="images/facebook.ico" alt="Facebook Icon" /></a></li>
+						<li><a href="https://github.com/naveenkashyapdv" class="icon" aria-label="GitHub Profile"><img src="images/github.ico" alt="GitHub Icon" /></a></li>
+						<li><a href="https://www.linkedin.com/in/venkat-naveenkashyap-devulapally-3aaa1182/" class="icon" aria-label="LinkedIn Profile"><img src="images/linkedin.ico" alt="LinkedIn Icon" /></a></li>
+						<li><a href="https://docs.google.com/document/d/14G2XIB9Q9lY-sJlkoKuUI_5tCzPuZ-Wk/edit" class="icon" aria-label="Resume"><img src="images/resume.ico" alt="Resume Icon" /></a></li>
+						<li><a href="https://hub.docker.com/search/?q=naveenkashyapdv&type=image/" class="icon" aria-label="Docker Images"><img src="images/docker.ico" alt="Docker Icon" /></a></li>
 					</ul>
 				</article>
 			</div>
